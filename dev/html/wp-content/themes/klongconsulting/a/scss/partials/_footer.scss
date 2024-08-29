@@ -1,0 +1,53 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	padding: 0 0 30px 0;
+	color: $white;
+	background: rgb(70, 70, 70);
+
+	.wrap {}
+
+}
+
+		.copyright {
+
+			width: 84.6153846%;
+			@include font-size(8);
+			line-height: (10/8) + em;
+			color: rgb(121, 121, 121);
+
+			@media screen and (min-width: 628px) {
+
+				width: 46.4968153%;
+
+			}
+
+			@media screen and (min-width: 908px) {
+
+				width: 41.3202934%;
+
+			}
+
+			p {
+
+				&:last-of-type {
+
+					margin: 0;
+
+				}
+
+			}
+
+		}
+
+		#copyright {
+
+			display: none;
+			margin: 0;
+
+		}

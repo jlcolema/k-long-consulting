@@ -1,0 +1,307 @@
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(217, 234, 245);
+	z-index: 9999;
+
+	.wrap {
+
+		position: relative;
+
+	}
+
+}
+
+		#logo {
+
+			position: relative;
+			left: -14px;
+			@include font-size(13);
+			line-height: (16/13) + em;
+			@include adelle-sans-bold;
+
+			@media screen and (min-width: 362px) and (max-width: 627px) {
+
+				@include font-size(14);
+				line-height: (24/14) + em;
+
+			}
+
+			@media screen and (min-width: 628px) {
+
+				@include font-size(14);
+				line-height: (24/14) + em;
+
+			}
+
+			a {
+
+				position: relative;
+				display: inline-block;
+				height: 47px;
+				padding: 7px 14px 0 14px;
+				color: rgb(17, 17, 17);
+				text-decoration: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+				@media screen and (min-width: 362px) and (max-width: 627px) {
+
+					height: 40px;
+					padding: 9px 14px 0;
+
+				}
+
+				@media screen and (min-width: 628px) {
+
+					height: 40px;
+					padding: 9px 14px 0;
+
+				}
+
+				&:hover {
+
+					@media screen and (min-width: 908px) {
+
+						border-bottom: 2px solid rgb(0, 174, 240);
+
+					}
+
+				}
+
+					span {
+
+						position: absolute;
+						left: 80px;
+						top: 7px;
+						width: 130px;
+						@include font-size(13);
+						line-height: (15/13) + em;
+						color: rgb(121, 121, 121);
+						z-index: 1;
+
+						@media screen and (min-width: 362px) and (max-width: 627px) {
+
+							position: static;
+							display: inline-block;
+							width: auto;
+							@include font-size(14);
+							line-height: (24/14) + em;
+							padding: 0 0 0 9px;
+
+						}
+
+						@media screen and (min-width: 628px) {
+
+							position: static;
+							display: inline;
+							width: auto;
+							padding: 0 0 0 9px;
+							@include font-size(14);
+							line-height: (24/14) + em;
+
+						}
+
+					}
+
+			}
+
+		}
+
+		#nav {
+
+			.toggle {
+
+				position: fixed;
+				right: 0;
+				top: 0;
+				@include hide-text;
+				z-index: 5;
+
+				@media screen and (min-width: 908px) {
+
+					display: none;
+
+				}
+
+				span {
+
+					display: block;
+					width: 52px;
+					height: 47px;
+					background: rgb(169, 221, 252) url(../img/nav-toggle.svg) center center no-repeat;
+					cursor: pointer;
+
+					@media screen and (min-width: 362px) and (max-width: 627px) {
+
+						width: 45px;
+						height: 40px;
+						background-image: url(../img/nav-toggle-tablet.svg);
+
+					}
+
+					@media screen and (min-width: 628px) {
+
+						width: 45px;
+						height: 40px;
+						background-image: url(../img/nav-toggle-tablet.svg);
+
+					}
+
+					.no-svg & {
+
+						background-image: url(../img/nav-toggle.png);
+
+						@media screen and (min-width: 628px) {
+
+							background-image: url(../img/nav-toggle-tablet.png);
+
+						}
+
+					}
+
+				}
+
+			}
+
+			ul {
+
+				display: none;
+				position: fixed;
+				right: 0;
+				top: 47px;
+				margin: 0;
+				padding: 12px 0 18px 0;
+				list-style: none;
+				background: rgb(169, 221, 252);
+				@include group;
+				z-index: 1;
+
+				@media screen and (min-width: 362px) and (max-width: 627px) {
+
+					top: 40px;
+					padding: 19px 0 21px 0;
+
+				}
+
+				@media screen and (min-width: 628px) {
+
+					top: 40px;
+					padding: 19px 0 21px 0;
+
+				}
+
+				@media screen and (min-width: 908px) {
+
+					display: block;
+					right: 31px;
+					top: 0;
+					padding: 0;
+					background: none;
+
+				}
+
+				@media screen and (min-width: 1300px) {
+
+					position: absolute;
+					left: 67%;
+					right: auto;
+					width: 100%;
+
+				}
+
+				&.open {
+
+					display: block;
+
+				}
+
+			}
+
+				li {
+
+					@include font-size(15);
+					line-height: (14/16) + em;
+					letter-spacing: 1px;
+
+					@media screen and (min-width: 628px) {
+
+						@include font-size(12);
+						text-transform: uppercase;
+						letter-spacing: 2px;
+
+					}
+
+					@media screen and (min-width: 908px) {
+
+						float: left;
+						@include font-size(12);
+						line-height: (26/12) + em;
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						padding: 12px 24px 11px 30px;
+						color: $black;
+						text-decoration: none;
+
+						@media screen and (min-width: 362px) and (max-width: 627px) {
+
+							padding: 10px 26px 9px 28px;
+
+						}
+
+						@media screen and (min-width: 628px) {
+
+							padding: 10px 26px 9px 28px;
+
+						}
+
+						@media screen and (min-width: 908px) {
+
+							height: 40px;
+							padding: 8px 12px 0 12px;
+
+						}
+
+						&:hover {
+
+							@media screen and (min-width: 908px) {
+
+								border-bottom: 2px solid rgb(0, 174, 240);
+
+							}
+
+						}
+
+					}
+
+				// Current Section
+
+				.current {
+
+					a {
+
+						@media screen and (min-width: 908px) {
+
+							border-bottom: 2px solid rgb(0, 174, 240);
+
+						}
+
+					}
+
+				}
+
+		}

@@ -1,0 +1,55 @@
+
+//-------------------------------------------
+//	Fonts
+//-------------------------------------------
+
+
+// Skolar Web (https://typekit.com/fonts/adelle-sans)
+
+
+// Regular
+
+
+@mixin adelle-sans-regular {
+
+	font-family: "adelle-sans-n4", "adelle-sans", "Helvetica Neue", Helvetica, Times, serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+
+// Italic
+
+
+@mixin adelle-sans-italic {
+
+	font-family: "adelle-sans-i4", "adelle-sans", "Helvetica Neue", Helvetica, Times, serif;
+	font-weight: 400;
+	font-style: italic;
+
+}
+
+
+// Bold
+
+
+@mixin adelle-sans-bold {
+
+	font-family: "adelle-sans-n7", "adelle-sans", "Helvetica Neue", Helvetica, Times, serif;
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+
+// Bold Italic
+
+
+@mixin adelle-sans-bold-italic {
+
+	font-family: "adelle-sans-i7", "adelle-sans", "Helvetica Neue", Helvetica, Times, serif;
+	font-weight: 700;
+	font-style: italic;
+
+}
