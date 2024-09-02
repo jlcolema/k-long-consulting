@@ -2,3 +2,4 @@
 *.sql
 wp-config*
 backupwordpress*
+organize/*
